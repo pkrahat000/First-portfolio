@@ -165,3 +165,16 @@ main{
     margin-top: 20px;
     text-align: center;
 }
+
+/*contract*/
+.contract{
+    display: flex;
+    background-color: #FFF8F3;
+    gap: 200px;
+    padding: 130px 200px;
+}
+.contract input, textarea{
+    margin-bottom: 10px;
+    border: 0px;
+    padding: 20px 30px;
+}
