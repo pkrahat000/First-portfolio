@@ -4,7 +4,7 @@
 
 /*header*/
 .header{
-    background-color: ##FFF8F3;
+    background-color: #FFF8F3;
     background-image: url('../images/header_bg.png'), url('../images/developer.png');
     background-repeat: no-repeat;
     background-position: bottom right, left;
@@ -72,7 +72,7 @@ nav li{
     
 }
 .button-contact{
-    background-color: #FFFFF;
+    background-color: #FFFFFF;
     color:#FD6E0A;
     padding: 15px;
     border-radius: 5px;
@@ -122,9 +122,9 @@ main{
     color: #757575;
 }
 .info-description{
-    color: #474747
+    color: #474747;
     font-weight: 400;
-    font-size: 20px;;
+    font-size: 20px;
 }
 /*What I Do style*/
 .What-I-Do-section-title{
@@ -177,4 +177,107 @@ main{
     margin-bottom: 10px;
     border: 0px;
     padding: 20px 30px;
+}
+/*responsive section*/
+@media screen and (max-width:576px) {
+
+    /*header*/
+    nav ul {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    nav {
+        display: flex;
+        margin: 50px 200px 0px 20px;
+        padding-bottom: 20px;
+        justify-content: space-between;
+    }
+    .header{
+        background-image: url('../images/header_bg.png'), url('../images/developer.png');
+        background-position: bottom right, bottom left;
+        background-size: auto , 60px 450px;
+        margin-left: 0px;
+    }
+    .header-banner {
+        display: flex;
+        margin: 0px 0px 0px 10px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .header-banner{
+        text-align: center;
+    }
+    .button-download{
+        margin-bottom:0px;
+    }
+
+
+    /*about*/
+
+    .about {
+        margin-top: 70px;
+        padding: 10px 20px;
+        text-align: center;
+    }
+    .about h3{
+        text-align: center;
+    }
+    .about-info-container {
+        flex-direction: column;
+    }
+
+
+
+
+        /*What-I-Do-section*/
+        .What-I-Do-section-title {
+            margin-top: 70px;
+            text-align: start;
+        }
+        .skills-container {
+            flex-direction: column;
+        
+        }
+        .skill {
+            text-align: center;
+        }
+    
+
+        
+
+    /*resume-contant*/
+    .section-title {
+        margin-top: 70px;
+        text-align: start;
+        margin-bottom: 50px;
+        font-size: 25px;
+        font-weight: 800px;
+    }
+    .resume-contant {
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+
+
+
+
+
+    .resume-button {
+        margin-bottom: 40px;
+    }
+.contract {
+    gap: 20px;
+    padding: 0px 20px;
+    flex-direction: column;
+}
+.form{
+    text-align: center;
+}
+    
+}
+.hide{
+    display: none;
+
 }
